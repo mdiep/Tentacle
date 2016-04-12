@@ -53,8 +53,8 @@ public struct Response: Hashable {
     
     /// Initialize a response with HTTP header fields.
     internal init(headerFields: [String : String]) {
-        self.rateLimitRemaining = UInt(headerFields["X-RateLimit-Remaining"]!)!
-        self.rateLimitReset = NSDate(timeIntervalSince1970: NSTimeInterval(headerFields["X-RateLimit-Reset"]!)!)
+        self.rateLimitRemaining = headerFields["X-RateLimit-Remaining"] != nil ? UInt(headerFields["X-RateLimit-Remaining"]!)! : UInt.max
+        self.rateLimitReset = headerFields["X-RateLimit-Reset"] != nil ? NSDate(timeIntervalSince1970: NSTimeInterval(headerFields["X-RateLimit-Reset"]!)!) : NSDate.distantFuture()
         self.links = linksInLinkHeader(headerFields["Link"] ?? "")
     }
     

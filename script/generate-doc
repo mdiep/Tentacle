@@ -2,9 +2,15 @@
 
 shopt -s extglob
 
-echo "Generating documentation..."
 jazzy
 
-git checkout --orphan gh-pages-update
+git branch -D gh-pages
+git checkout --orphan gh-pages
 git rm --cached $(git ls-files)
+
+git status --porcelain | cut -d" " -f2 | grep -v docs | xargs rm -Rf
+mv docs/* .
+
+git add . 
+git commit -am "Update documentation" 
 

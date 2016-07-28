@@ -8,4 +8,3 @@ jazzy
 git checkout --orphan gh-pages-update
 git rm --cached $(git ls-files)
 
-rm -Rf !(docs) .*

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Generating documentation..."
+jazzy
+
+git checkout --orphan gh-pages-update
+git rm --cached $(git ls-files)
+
+

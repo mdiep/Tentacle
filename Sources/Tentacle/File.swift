@@ -36,6 +36,16 @@ public struct File {
         self.path = path
         self.sha = sha
     }
+
+    public init(message: String, committer: Author?, author: Author?, content: Data, branch: String?) {
+        self.message = message
+        self.committer = committer
+        self.author = author
+        self.content = content
+        self.branch = branch
+        self.path = nil
+        self.sha = nil
+    }
 }
 
 extension File: RequestType {

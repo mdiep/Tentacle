@@ -22,13 +22,19 @@ public struct File {
     public let content: Data
     /// Branch in which the file will be created
     public let branch: String?
+    /// The content path (used in update)
+    public let path: String?
+    /// The blob SHA of the file being replaced (used in update)
+    public let sha: String?
 
-    public init(message: String, committer: Author?, author: Author?, content: Data, branch: String?) {
+    public init(message: String, committer: Author?, author: Author?, content: Data, branch: String?, path: String?, sha: String?) {
         self.message = message
         self.committer = committer
         self.author = author
         self.content = content
         self.branch = branch
+        self.path = path
+        self.sha = sha
     }
 }
 
@@ -57,6 +63,14 @@ extension File: RequestType {
             payload["branch"] = .string(branch)
         }
 
+        if let path = path {
+            payload["path"] = .string(path)
+        }
+
+        if let sha = sha {
+            payload["sha"] = .string(sha)
+        }
+
         return JSON.object(payload)
     }
     
@@ -66,5 +80,7 @@ extension File: RequestType {
             && lhs.author == rhs.committer
             && lhs.content == rhs.content
             && lhs.branch == rhs.branch
+            && lhs.path == rhs.path
+            && lhs.sha == rhs.sha
     }
 }

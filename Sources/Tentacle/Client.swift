@@ -361,6 +361,8 @@ public final class Client {
         return fetchMany(.branches(owner: repository.owner, repository: repository.name), page: page, pageSize: perPage)
     }
 
+//    public func update
+
     /// Fetch an endpoint from the API.
     private func fetch(_ endpoint: Endpoint, page: UInt?, pageSize: UInt?) -> SignalProducer<(Response, Any), Error> {
         let url = URL(server, endpoint, page: page, pageSize: pageSize)

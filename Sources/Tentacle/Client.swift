@@ -356,14 +356,14 @@ public final class Client {
         return send(file, to: .content(owner: repository.owner, repository: repository.name, path: path, ref: branch), using: .put)
     }
 
-    /// Get branches for a repository
-    public func branches(in repository: Repository, page: UInt = 1, perPage: UInt = 30) -> SignalProducer<(Response, [Branch]), Error> {
-        return fetchMany(.branches(owner: repository.owner, repository: repository.name), page: page, pageSize: perPage)
-    }
-
     /// Update a file in a repository
     public func update(file: File, atPath path: String, in repository: Repository, inBranch branch: String? = nil) -> SignalProducer<(Response, FileResponse), Error> {
         return send(file, to: .content(owner: repository.owner, repository: repository.name, path: path, ref: branch), using: .put)
+    }
+
+    /// Get branches for a repository
+    public func branches(in repository: Repository, page: UInt = 1, perPage: UInt = 30) -> SignalProducer<(Response, [Branch]), Error> {
+        return fetchMany(.branches(owner: repository.owner, repository: repository.name), page: page, pageSize: perPage)
     }
 
     /// Fetch an endpoint from the API.

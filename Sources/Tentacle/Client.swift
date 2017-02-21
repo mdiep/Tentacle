@@ -361,7 +361,10 @@ public final class Client {
         return fetchMany(.branches(owner: repository.owner, repository: repository.name), page: page, pageSize: perPage)
     }
 
-//    public func update
+    /// Update a file in a repository
+    public func update(file: File, atPath path: String, in repository: Repository, inBranch branch: String? = nil) -> SignalProducer<(Response, FileResponse), Error> {
+        return send(file, to: .content(owner: repository.owner, repository: repository.name, path: path, ref: branch), using: .put)
+    }
 
     /// Fetch an endpoint from the API.
     private func fetch(_ endpoint: Endpoint, page: UInt?, pageSize: UInt?) -> SignalProducer<(Response, Any), Error> {

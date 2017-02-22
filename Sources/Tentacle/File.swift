@@ -22,20 +22,6 @@ public struct File {
     public let content: Data
     /// Branch in which the file will be created
     public let branch: String?
-    /// The content path (used in update)
-    public let path: String?
-    /// The blob SHA of the file being replaced (used in update)
-    public let sha: String?
-
-    public init(message: String, committer: Author?, author: Author?, content: Data, branch: String?, path: String?, sha: String?) {
-        self.message = message
-        self.committer = committer
-        self.author = author
-        self.content = content
-        self.branch = branch
-        self.path = path
-        self.sha = sha
-    }
 
     public init(message: String, committer: Author?, author: Author?, content: Data, branch: String?) {
         self.message = message
@@ -43,8 +29,6 @@ public struct File {
         self.author = author
         self.content = content
         self.branch = branch
-        self.path = nil
-        self.sha = nil
     }
 }
 
@@ -73,14 +57,6 @@ extension File: RequestType {
             payload["branch"] = .string(branch)
         }
 
-        if let path = path {
-            payload["path"] = .string(path)
-        }
-
-        if let sha = sha {
-            payload["sha"] = .string(sha)
-        }
-
         return JSON.object(payload)
     }
     
@@ -90,7 +66,42 @@ extension File: RequestType {
             && lhs.author == rhs.committer
             && lhs.content == rhs.content
             && lhs.branch == rhs.branch
+    }
+}
+
+struct Update {
+    /// The file to update
+    let file: File
+
+    /// The content path
+    let path: String
+
+    /// The blob SHA of the file being replaced
+    let sha: SHA
+}
+
+extension Update: RequestType {
+    public typealias Response = FileResponse
+
+    public var hashValue: Int {
+        return path.hashValue ^ sha.hashValue
+    }
+
+    func encode() -> JSON {
+        guard case var .object(payload) = file.encode() else {
+            fatalError("Invalid `File` object")
+        }
+
+        payload["path"] = .string(path)
+        payload["sha"] = sha.encode()
+
+        return .object(payload)
+    }
+
+    public static func ==(lhs: Update, rhs: Update) -> Bool {
+        return lhs.file == rhs.file
             && lhs.path == rhs.path
             && lhs.sha == rhs.sha
     }
+
 }

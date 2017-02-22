@@ -357,8 +357,9 @@ public final class Client {
     }
 
     /// Update a file in a repository
-    public func update(file: File, atPath path: String, in repository: Repository, inBranch branch: String? = nil) -> SignalProducer<(Response, FileResponse), Error> {
-        return send(file, to: .content(owner: repository.owner, repository: repository.name, path: path, ref: branch), using: .put)
+    public func update(file: File, atPath path: String, sha: SHA, in repository: Repository, inBranch branch: String? = nil) -> SignalProducer<(Response, FileResponse), Error> {
+        let update = Update(file: file, path: path, sha: sha)
+        return send(update, to: .content(owner: repository.owner, repository: repository.name, path: path, ref: branch), using: .put)
     }
 
     /// Get branches for a repository

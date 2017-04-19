@@ -1,0 +1,5 @@
+module: Tentacle 
+author: Matt Diephouse 
+author_url: http://matt.diephouse.com/
+github_url: https://github.com/mdiep/Tentacle
+xcodebuild_arguments: [-workspace, Tentacle.xcworkspace, -scheme, Tentacle-iOS]

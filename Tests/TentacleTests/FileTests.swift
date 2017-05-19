@@ -57,6 +57,27 @@ class FileTests: XCTestCase {
 
         let encoded = file.encode()
         XCTAssertEqual(expected, encoded)
+    }
 
+    func testFileEncodingForUpdate() {
+        let file = File(
+            message: "Move README.md to PLEASE-README.md",
+            committer: nil,
+            author: nil,
+            content: "This is the content of my file".data(using: .utf8)!,
+            branch: nil
+        )
+
+        let expected: JSON = .object([
+            "message": .string("Move README.md to PLEASE-README.md"),
+            "content": .string("This is the content of my file".data(using: .utf8)!.base64EncodedString()),
+            "sha": .string("329688480d39049927147c162b9d2deaf885005f"),
+            "path": .string("PLEASE-README.md")
+        ])
+
+        let updatedFile = Update(file: file, path: "PLEASE-README.md", sha: SHA(hash: "329688480d39049927147c162b9d2deaf885005f"))
+
+        let encoded = updatedFile.encode()
+        XCTAssertEqual(expected, encoded)
     }
 }

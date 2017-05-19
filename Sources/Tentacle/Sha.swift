@@ -30,3 +30,8 @@ extension SHA: ResourceType {
     }
 }
 
+extension SHA: Encodable {
+    public func encode() -> JSON {
+        return .string(hash)
+    }
+}

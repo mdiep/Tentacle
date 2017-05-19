@@ -83,3 +83,40 @@ extension File: Encodable, Hashable {
             && lhs.branch == rhs.branch
     }
 }
+
+struct Update {
+    /// The file to update
+    let file: File
+
+    /// The content path
+    let path: String
+
+    /// The blob SHA of the file being replaced
+    let sha: SHA
+}
+
+extension Update: RequestType {
+    public typealias Response = FileResponse
+
+    public var hashValue: Int {
+        return path.hashValue ^ sha.hashValue
+    }
+
+    func encode() -> JSON {
+        guard case var .object(payload) = file.encode() else {
+            fatalError("Invalid `File` object")
+        }
+
+        payload["path"] = .string(path)
+        payload["sha"] = sha.encode()
+
+        return .object(payload)
+    }
+
+    public static func ==(lhs: Update, rhs: Update) -> Bool {
+        return lhs.file == rhs.file
+            && lhs.path == rhs.path
+            && lhs.sha == rhs.sha
+    }
+
+}

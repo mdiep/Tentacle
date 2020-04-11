@@ -7,7 +7,6 @@
 //
 
 import ReactiveSwift
-import Result
 import Tentacle
 import XCTest
 

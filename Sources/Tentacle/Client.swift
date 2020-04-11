@@ -8,7 +8,6 @@
 
 import Foundation
 import ReactiveSwift
-import Result
 
 extension URL {
     internal func url(with queryItems: [URLQueryItem]) -> URL {
@@ -34,7 +33,7 @@ extension URL {
 extension URLSession {
 	/// Returns a producer that will download a file using the given request. The file will be
 	/// deleted after the producer terminates.
-	internal func downloadFile(_ request: URLRequest) -> SignalProducer<URL, AnyError> {
+	internal func downloadFile(_ request: URLRequest) -> SignalProducer<URL, Error> {
 		return SignalProducer { observer, lifetime in
 			let serialDisposable = SerialDisposable()
 			let handle = lifetime += serialDisposable
@@ -47,7 +46,7 @@ extension URLSession {
 					observer.send(value: url)
 					observer.sendCompleted()
 				} else if let error = error {
-					observer.send(error: AnyError(error))
+					observer.send(error: error)
                 } else {
                     fatalError("Request neither succeeded nor failed: \(String(describing: request.url))")
                 }
@@ -151,7 +150,7 @@ public final class Client {
     public func download(asset: Release.Asset) -> SignalProducer<URL, Error> {
         return urlSession
             .downloadFile(urlRequest(for: asset.apiURL, contentType: Client.DownloadContentType))
-            .mapError { Error.networkError($0.error) }
+            .mapError { Error.networkError($0) }
     }
     
     /// Create a `URLRequest` for the given URL with the given content type.
@@ -185,7 +184,7 @@ public final class Client {
         return urlSession
             .reactive
             .data(with: urlRequest(for: request, page: page, perPage: perPage))
-            .mapError { Error.networkError($0.error) }
+            .mapError { Error.networkError($0) }
             .flatMap(.concat) { data, response -> SignalProducer<(Response, Data), Error> in
                 let response = response as! HTTPURLResponse
                 let headers = response.allHeaderFields as! [String:String]

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D80C8C8244F7F4500EB58A7 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */; };
-		2D80C8C9244F7F4500EB58A7 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */; };
 		61377C781C8A2B760081FF24 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61377C791C8A2B760081FF24 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
 		61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
@@ -232,7 +230,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultExtensions.swift; sourceTree = "<group>"; };
 		61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A072D8D1DED11C900CFE58F /* ContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
@@ -528,7 +525,6 @@
 				7ABFB4DC1D5159F50067B500 /* RepositoryInfoTests.swift */,
 				BEA86F9C1C9F7E1E0049360B /* RepositoryTests.swift */,
 				BE1E036A1C9AD87F001296C2 /* ResponseTests.swift */,
-				2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */,
 				BEA86F991C9F7C230049360B /* ServerTests.swift */,
 				BF01A2601EAA63100028ECFC /* TreeTests.swift */,
 				BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */,
@@ -902,7 +898,6 @@
 				619081881C8A2DB7001BE2F8 /* Fixture.swift in Sources */,
 				928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */,
 				BE2B6A6D1C8B854F0080BFEB /* ClientTests.swift in Sources */,
-				2D80C8C9244F7F4500EB58A7 /* ResultExtensions.swift in Sources */,
 				7A27887D1D49223B007AC936 /* CommentsTests.swift in Sources */,
 				BEA86F9B1C9F7C230049360B /* ServerTests.swift in Sources */,
 				7A2F66101CF527EB00463602 /* IssuesTests.swift in Sources */,
@@ -965,7 +960,6 @@
 				7AAB00FD1CF51FC5005A7319 /* IssuesTests.swift in Sources */,
 				BE1E036B1C9AD87F001296C2 /* ResponseTests.swift in Sources */,
 				7A22EDBC1E47CB8900524539 /* EndpointTests.swift in Sources */,
-				2D80C8C8244F7F4500EB58A7 /* ResultExtensions.swift in Sources */,
 				BEA86F9D1C9F7E1E0049360B /* RepositoryTests.swift in Sources */,
 				928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */,
 				BEB076601C8A019E00ABD373 /* GitHubErrorTests.swift in Sources */,
@@ -1025,7 +1019,6 @@
 				PRODUCT_NAME = Tentacle;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1047,7 +1040,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1063,7 +1055,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 			};
 			name = Debug;
 		};
@@ -1078,7 +1069,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

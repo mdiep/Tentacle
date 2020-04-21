@@ -13,5 +13,5 @@ let package = Package(
         .target(name: "Tentacle", dependencies: ["ReactiveSwift"]),
         .testTarget(name: "TentacleTests", dependencies: ["Tentacle"]),
     ],
-    swiftLanguageVersions: [.version("5.2")]
+    swiftLanguageVersions: [.v5]
 )

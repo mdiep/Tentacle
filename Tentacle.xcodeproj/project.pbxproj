@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D80C8C8244F7F4500EB58A7 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */; };
+		2D80C8C9244F7F4500EB58A7 /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */; };
 		61377C781C8A2B760081FF24 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61377C791C8A2B760081FF24 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
 		61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
@@ -150,11 +152,9 @@
 		928DF21F1E0E693000E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
 		928DF2201E0E693100E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
 		928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */; };
-		928DF22B1E0E6A1200E6DE35 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2251E0E6A1200E6DE35 /* Result.framework */; };
 		928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
 		928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
 		928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */; };
-		928DF2391E0E95B600E6DE35 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2331E0E95B600E6DE35 /* Result.framework */; };
 		928DF23E1E1117D600E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		928DF23F1E11187C00E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		92F0C2BA1E391088004A9889 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2B91E391088004A9889 /* FileTests.swift */; };
@@ -232,6 +232,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultExtensions.swift; sourceTree = "<group>"; };
 		61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A072D8D1DED11C900CFE58F /* ContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
@@ -302,9 +303,7 @@
 		928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponseTests.swift; sourceTree = "<group>"; };
 		928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-file-sample-response.data"; sourceTree = "<group>"; };
 		928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/ReactiveSwift.framework"; sourceTree = "<group>"; };
-		928DF2251E0E6A1200E6DE35 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/Result.framework"; sourceTree = "<group>"; };
 		928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Checkouts/ReactiveSwift/build/Debug/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
-		928DF2331E0E95B600E6DE35 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
 		928DF23D1E1117D600E6DE35 /* Sha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha.swift; sourceTree = "<group>"; };
 		92F0C2B91E391088004A9889 /* FileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
 		BE0F409F1C89098E00E3B11A /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fixture.swift; path = Tests/TentacleTests/Fixture.swift; sourceTree = SOURCE_ROOT; };
@@ -351,7 +350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */,
-				928DF22B1E0E6A1200E6DE35 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +366,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */,
-				928DF2391E0E95B600E6DE35 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,11 +510,14 @@
 		BE88E8001C88C6B30034A112 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7A8A9D641E5547F50009DA9E /* BranchTests.swift */,
 				BE2B6A6B1C8B854F0080BFEB /* ClientTests.swift */,
 				7A1F20EF1D3E86D900F275F8 /* ColorTests.swift */,
 				7A27887B1D49223B007AC936 /* CommentsTests.swift */,
 				7A072D8D1DED11C900CFE58F /* ContentTests.swift */,
 				7A22EDBB1E47CB8900524539 /* EndpointTests.swift */,
+				928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */,
+				92F0C2B91E391088004A9889 /* FileTests.swift */,
 				BE0F409F1C89098E00E3B11A /* Fixture.swift */,
 				BE0F40961C8908CB00E3B11A /* Fixtures */,
 				BEB0765E1C8A019A00ABD373 /* GitHubErrorTests.swift */,
@@ -528,12 +528,10 @@
 				7ABFB4DC1D5159F50067B500 /* RepositoryInfoTests.swift */,
 				BEA86F9C1C9F7E1E0049360B /* RepositoryTests.swift */,
 				BE1E036A1C9AD87F001296C2 /* ResponseTests.swift */,
+				2D80C8C7244F7F4500EB58A7 /* ResultExtensions.swift */,
 				BEA86F991C9F7C230049360B /* ServerTests.swift */,
-				BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */,
-				928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */,
-				92F0C2B91E391088004A9889 /* FileTests.swift */,
-				7A8A9D641E5547F50009DA9E /* BranchTests.swift */,
 				BF01A2601EAA63100028ECFC /* TreeTests.swift */,
+				BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */,
 			);
 			name = Tests;
 			path = Tests/TentacleTests;
@@ -543,9 +541,7 @@
 			isa = PBXGroup;
 			children = (
 				928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */,
-				928DF2331E0E95B600E6DE35 /* Result.framework */,
 				928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */,
-				928DF2251E0E6A1200E6DE35 /* Result.framework */,
 			);
 			name = Frameworks;
 			path = Tentacle;
@@ -906,6 +902,7 @@
 				619081881C8A2DB7001BE2F8 /* Fixture.swift in Sources */,
 				928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */,
 				BE2B6A6D1C8B854F0080BFEB /* ClientTests.swift in Sources */,
+				2D80C8C9244F7F4500EB58A7 /* ResultExtensions.swift in Sources */,
 				7A27887D1D49223B007AC936 /* CommentsTests.swift in Sources */,
 				BEA86F9B1C9F7C230049360B /* ServerTests.swift in Sources */,
 				7A2F66101CF527EB00463602 /* IssuesTests.swift in Sources */,
@@ -968,6 +965,7 @@
 				7AAB00FD1CF51FC5005A7319 /* IssuesTests.swift in Sources */,
 				BE1E036B1C9AD87F001296C2 /* ResponseTests.swift in Sources */,
 				7A22EDBC1E47CB8900524539 /* EndpointTests.swift in Sources */,
+				2D80C8C8244F7F4500EB58A7 /* ResultExtensions.swift in Sources */,
 				BEA86F9D1C9F7E1E0049360B /* RepositoryTests.swift in Sources */,
 				928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */,
 				BEB076601C8A019E00ABD373 /* GitHubErrorTests.swift in Sources */,

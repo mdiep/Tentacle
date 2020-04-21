@@ -11,7 +11,6 @@
 
 import Foundation
 import ReactiveSwift
-import Result
 @testable import Tentacle
 
 let baseURL = URL(fileURLWithPath: CommandLine.arguments[1])
@@ -55,6 +54,9 @@ let result = SignalProducer<FixtureType, AnyError>(Fixture.allFixtures)
     }
     .wait()
 
-if let error = result.error {
+switch result {
+case .success:
+    print("Successfully updated text fixtures")
+case let .failure(error):
     print("Error updating fixtures: \(error)")
 }

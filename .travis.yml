@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode10.1
+osx_image: xcode11.3
 branches:
   only:
     - master
@@ -8,19 +8,19 @@ xcode_workspace: Tentacle.xcworkspace
 matrix:
   include:
     - xcode_scheme: Tentacle-OSX
-      name: Xcode 10.1 / macOS
+      name: Xcode 11.3 / macOS
       env: XCODE_ACTION="build-for-testing test-without-building"
     - xcode_scheme: Tentacle-iOS
-      name: Xcode 10.1 / iOS
+      name: Xcode 11.3 / iOS
       env: XCODE_ACTION="build-for-testing test-without-building"
     - xcode_scheme: Tentacle-OSX
-      name: Xcode 10.2 / macOS
+      name: Xcode 11.4 / macOS
       env: XCODE_ACTION="build-for-testing test-without-building"
-      osx_image: xcode10.2
+      osx_image: xcode11.4
     - xcode_scheme: Tentacle-iOS
-      name: Xcode 10.2 / iOS
+      name: Xcode 11.4 / iOS
       env: XCODE_ACTION="build-for-testing test-without-building"
-      osx_image: xcode10.2
+      osx_image: xcode11.4
     - xcode_scheme: update-test-fixtures
       env: XCODE_ACTION=build
     - git:

@@ -28,6 +28,7 @@ matrix:
       script:
         - swift build
         - swift test
+      osx_image: xcode11.4
       env:
         - JOB=SWIFTPM_DARWIN
 notifications:

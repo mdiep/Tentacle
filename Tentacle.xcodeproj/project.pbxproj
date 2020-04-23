@@ -1295,7 +1295,6 @@
 		BE88E8721C88F0990034A112 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "update-test-fixtures/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1310,7 +1309,6 @@
 		BE88E8731C88F0990034A112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "update-test-fixtures/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

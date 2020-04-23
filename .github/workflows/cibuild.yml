@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
-          nestedSubmodules: true
+          submodules: recursive
       - run: sudo xcode-select -s '/Applications/Xcode_${{ matrix.xcode }}.app'
       - run: script/cibuild Tentacle.xcworkspace ${{ matrix.scheme }} "build-for-testing test-without-building"
 
@@ -24,8 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
-          nestedSubmodules: true
+          submodules: recursive
       - run: sudo xcode-select -s '/Applications/Xcode_${{ matrix.xcode }}.app'
       - run: script/cibuild Tentacle.xcworkspace update-test-fixtures build
 
@@ -39,7 +37,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: false
-          nestedSubmodules: false
       - run: sudo xcode-select -s '/Applications/Xcode_${{ matrix.xcode }}.app'
       - name: Cache built Swift Package artifacts
         uses: actions/cache@v1

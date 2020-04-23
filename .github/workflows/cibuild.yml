@@ -5,7 +5,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        xcode: [11.3, 11.3.1, 11.4, 11.4.1]
+        xcode: [11.3, 11.3.1, 11.4]
         scheme: [Tentacle-OSX, Tentacle-iOS]
     steps:
       - uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        xcode: [11.4, 11.4.1]
+        xcode: [11.4]
     steps:
       - uses: actions/checkout@v2
         with:
@@ -34,7 +34,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        xcode: [11.4, 11.4.1]
+        xcode: [11.4]
     steps:
       - uses: actions/checkout@v2
         with:

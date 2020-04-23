@@ -7,22 +7,21 @@
 //
 
 import Foundation
-import Result
 
 internal func decode<T: Decodable>(_ payload: Data) -> Result<T, DecodingError> {
-    return Result(catching: { () -> T in
+    Result {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601)
         return try decoder.decode(T.self, from: payload)
-    })
+    }.mapError { $0 as! DecodingError }
 }
 
 internal func decodeList<T: Decodable>(_ payload: Data) -> Result<[T], DecodingError> {
-    return Result(catching: { () -> [T] in
+    Result { () -> [T] in
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601)
         return try decoder.decode([T].self, from: payload)
-    })
+    }.mapError { $0 as! DecodingError }
 }
 
 extension DecodingError.Context: Equatable {

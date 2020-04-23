@@ -11,7 +11,6 @@
 
 import Foundation
 import ReactiveSwift
-import Result
 @testable import Tentacle
 
 let baseURL = URL(fileURLWithPath: CommandLine.arguments[1])
@@ -19,8 +18,8 @@ let baseURL = URL(fileURLWithPath: CommandLine.arguments[1])
 let fileManager = FileManager.default
 let client = Client(.dotCom)
 let session = URLSession.shared
-let result = SignalProducer<FixtureType, AnyError>(Fixture.allFixtures)
-    .flatMap(.concat) { fixture -> SignalProducer<(), AnyError> in
+let result = SignalProducer<FixtureType, Error>(Fixture.allFixtures)
+    .flatMap(.concat) { fixture -> SignalProducer<(), Error> in
         let request = client.urlRequest(for: fixture.url, contentType: fixture.contentType)
         let dataURL = baseURL.appendingPathComponent(fixture.dataFilename)
         let responseURL = baseURL.appendingPathComponent(fixture.responseFilename)
@@ -55,6 +54,9 @@ let result = SignalProducer<FixtureType, AnyError>(Fixture.allFixtures)
     }
     .wait()
 
-if let error = result.error {
+switch result {
+case .success:
+    print("Successfully updated text fixtures")
+case let .failure(error):
     print("Error updating fixtures: \(error)")
 }

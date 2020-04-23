@@ -150,11 +150,9 @@
 		928DF21F1E0E693000E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
 		928DF2201E0E693100E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
 		928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */; };
-		928DF22B1E0E6A1200E6DE35 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2251E0E6A1200E6DE35 /* Result.framework */; };
 		928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
 		928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
 		928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */; };
-		928DF2391E0E95B600E6DE35 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2331E0E95B600E6DE35 /* Result.framework */; };
 		928DF23E1E1117D600E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		928DF23F1E11187C00E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		92F0C2BA1E391088004A9889 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2B91E391088004A9889 /* FileTests.swift */; };
@@ -302,9 +300,7 @@
 		928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponseTests.swift; sourceTree = "<group>"; };
 		928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-file-sample-response.data"; sourceTree = "<group>"; };
 		928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/ReactiveSwift.framework"; sourceTree = "<group>"; };
-		928DF2251E0E6A1200E6DE35 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/Result.framework"; sourceTree = "<group>"; };
 		928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Checkouts/ReactiveSwift/build/Debug/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
-		928DF2331E0E95B600E6DE35 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
 		928DF23D1E1117D600E6DE35 /* Sha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha.swift; sourceTree = "<group>"; };
 		92F0C2B91E391088004A9889 /* FileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
 		BE0F409F1C89098E00E3B11A /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fixture.swift; path = Tests/TentacleTests/Fixture.swift; sourceTree = SOURCE_ROOT; };
@@ -351,7 +347,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */,
-				928DF22B1E0E6A1200E6DE35 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */,
-				928DF2391E0E95B600E6DE35 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,11 +507,14 @@
 		BE88E8001C88C6B30034A112 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7A8A9D641E5547F50009DA9E /* BranchTests.swift */,
 				BE2B6A6B1C8B854F0080BFEB /* ClientTests.swift */,
 				7A1F20EF1D3E86D900F275F8 /* ColorTests.swift */,
 				7A27887B1D49223B007AC936 /* CommentsTests.swift */,
 				7A072D8D1DED11C900CFE58F /* ContentTests.swift */,
 				7A22EDBB1E47CB8900524539 /* EndpointTests.swift */,
+				928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */,
+				92F0C2B91E391088004A9889 /* FileTests.swift */,
 				BE0F409F1C89098E00E3B11A /* Fixture.swift */,
 				BE0F40961C8908CB00E3B11A /* Fixtures */,
 				BEB0765E1C8A019A00ABD373 /* GitHubErrorTests.swift */,
@@ -529,11 +526,8 @@
 				BEA86F9C1C9F7E1E0049360B /* RepositoryTests.swift */,
 				BE1E036A1C9AD87F001296C2 /* ResponseTests.swift */,
 				BEA86F991C9F7C230049360B /* ServerTests.swift */,
-				BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */,
-				928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */,
-				92F0C2B91E391088004A9889 /* FileTests.swift */,
-				7A8A9D641E5547F50009DA9E /* BranchTests.swift */,
 				BF01A2601EAA63100028ECFC /* TreeTests.swift */,
+				BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */,
 			);
 			name = Tests;
 			path = Tests/TentacleTests;
@@ -543,9 +537,7 @@
 			isa = PBXGroup;
 			children = (
 				928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */,
-				928DF2331E0E95B600E6DE35 /* Result.framework */,
 				928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */,
-				928DF2251E0E6A1200E6DE35 /* Result.framework */,
 			);
 			name = Frameworks;
 			path = Tentacle;
@@ -1027,7 +1019,6 @@
 				PRODUCT_NAME = Tentacle;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1049,7 +1040,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1065,7 +1055,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 			};
 			name = Debug;
 		};
@@ -1080,7 +1069,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

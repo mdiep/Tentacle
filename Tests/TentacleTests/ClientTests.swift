@@ -7,33 +7,8 @@
 //
 
 import ReactiveSwift
-import Result
 import Tentacle
 import XCTest
-
-public func == <T: Equatable, Error: Equatable> (left: Result<[T], Error>, right: Result<[T], Error>) -> Bool {
-    if let left = left.value, let right = right.value {
-        return left == right
-    } else if let left = left.error, let right = right.error {
-        return left == right
-    }
-    return false
-}
-
-public func == <T: Equatable, Error: Equatable> (left: Result<[[T]], Error>, right: Result<[[T]], Error>) -> Bool {
-    if let left = left.value, let right = right.value {
-        guard left.count == right.count else { return false }
-        for idx in left.indices {
-            if left[idx] != right[idx] {
-                return false
-            }
-        }
-        return true
-    } else if let left = left.error, let right = right.error {
-        return left == right
-    }
-    return false
-}
 
 func ExpectResult
     <O: ResourceType>
@@ -156,7 +131,7 @@ class ClientTests: XCTestCase {
         )
     }
     
-    func testDownloadAsset() {
+    func testDownloadAsset() throws {
         let release: Release = Fixture.Release.MDPSplitView1_0_2.decode()!
         let asset = release.assets
             .first { $0.name == "MDPSplitView.framework.zip" }!
@@ -167,7 +142,8 @@ class ClientTests: XCTestCase {
                 return try! Data(contentsOf: url)
             }
             .single()!
-        XCTAssertEqual(result.value, Fixture.Release.Asset.MDPSplitView_framework_zip.data)
+
+        XCTAssertEqual(try result.get(), Fixture.Release.Asset.MDPSplitView_framework_zip.data)
     }
     
     func testUserWithLogin() {

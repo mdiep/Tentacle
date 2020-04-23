@@ -671,6 +671,7 @@
 		BE88E7E91C88C6B30034A112 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Matt Diephouse";

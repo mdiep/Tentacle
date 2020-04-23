@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D6697AD2451EFC300A75D72 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6697AC2451EFC300A75D72 /* ReactiveSwift.framework */; platformFilter = ios; };
-		2D6697AE2451EFD100A75D72 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6697AC2451EFC300A75D72 /* ReactiveSwift.framework */; };
+		2D6697B42451F58400A75D72 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6697B32451F58400A75D72 /* ReactiveSwift.framework */; };
+		2D6697B82451F58900A75D72 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6697B72451F58900A75D72 /* ReactiveSwift.framework */; };
 		61377C781C8A2B760081FF24 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61377C791C8A2B760081FF24 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
 		61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
@@ -230,7 +230,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D6697AC2451EFC300A75D72 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6697B32451F58400A75D72 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6697B72451F58900A75D72 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A072D8D1DED11C900CFE58F /* ContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
@@ -300,8 +301,6 @@
 		927847FF1E0C78DB003B9EE6 /* FileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponse.swift; sourceTree = "<group>"; };
 		928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponseTests.swift; sourceTree = "<group>"; };
 		928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-file-sample-response.data"; sourceTree = "<group>"; };
-		928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/ReactiveSwift.framework"; sourceTree = "<group>"; };
-		928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Checkouts/ReactiveSwift/build/Debug/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
 		928DF23D1E1117D600E6DE35 /* Sha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha.swift; sourceTree = "<group>"; };
 		92F0C2B91E391088004A9889 /* FileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
 		BE0F409F1C89098E00E3B11A /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fixture.swift; path = Tests/TentacleTests/Fixture.swift; sourceTree = SOURCE_ROOT; };
@@ -347,7 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6697AD2451EFC300A75D72 /* ReactiveSwift.framework in Frameworks */,
+				2D6697B82451F58900A75D72 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +362,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6697AE2451EFD100A75D72 /* ReactiveSwift.framework in Frameworks */,
+				2D6697B42451F58400A75D72 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +385,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D6697B22451F58400A75D72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D6697B72451F58900A75D72 /* ReactiveSwift.framework */,
+				2D6697B32451F58400A75D72 /* ReactiveSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE0F40961C8908CB00E3B11A /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,8 +456,8 @@
 				BE88E7F41C88C6B30034A112 /* Tentacle */,
 				BE88E8001C88C6B30034A112 /* Tests */,
 				BE88E8681C88F0990034A112 /* update-test-fixtures */,
-				BE88E8271C88C7E90034A112 /* Frameworks */,
 				BE88E7F31C88C6B30034A112 /* Products */,
+				2D6697B22451F58400A75D72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -532,17 +540,6 @@
 			);
 			name = Tests;
 			path = Tests/TentacleTests;
-			sourceTree = "<group>";
-		};
-		BE88E8271C88C7E90034A112 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2D6697AC2451EFC300A75D72 /* ReactiveSwift.framework */,
-				928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */,
-				928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */,
-			);
-			name = Frameworks;
-			path = Tentacle;
 			sourceTree = "<group>";
 		};
 		BE88E8681C88F0990034A112 /* update-test-fixtures */ = {

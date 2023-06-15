@@ -9,7 +9,7 @@ my $buildSettings = qx{xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sho
 my @args = ("-workspace", $WORKSPACE, "-scheme", $SCHEME, "-configuration", "Release", split(/\s+/, $ACTION), "CODE_SIGNING_REQUIRED=NO", "CODE_SIGN_IDENTITY=", "ENABLE_TESTABILITY=YES");
 
 if ($buildSettings =~ /\bPLATFORM_NAME = iphoneos/i) {
-  unshift @args, "-destination", "name=iPhone 11";
+  unshift @args, "-destination", "name=iPhone 14";
   unshift @args, "-sdk", "iphonesimulator";
 }
 

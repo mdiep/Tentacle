@@ -149,10 +149,8 @@
 		927848011E0C78EA003B9EE6 /* FileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847FF1E0C78DB003B9EE6 /* FileResponse.swift */; };
 		928DF21F1E0E693000E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
 		928DF2201E0E693100E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
-		928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */; };
 		928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
 		928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
-		928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */; };
 		928DF23E1E1117D600E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		928DF23F1E11187C00E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		92F0C2BA1E391088004A9889 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2B91E391088004A9889 /* FileTests.swift */; };
@@ -299,8 +297,6 @@
 		927847FF1E0C78DB003B9EE6 /* FileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponse.swift; sourceTree = "<group>"; };
 		928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponseTests.swift; sourceTree = "<group>"; };
 		928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-file-sample-response.data"; sourceTree = "<group>"; };
-		928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/ReactiveSwift.framework"; sourceTree = "<group>"; };
-		928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Checkouts/ReactiveSwift/build/Debug/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
 		928DF23D1E1117D600E6DE35 /* Sha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha.swift; sourceTree = "<group>"; };
 		92F0C2B91E391088004A9889 /* FileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
 		BE0F409F1C89098E00E3B11A /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fixture.swift; path = Tests/TentacleTests/Fixture.swift; sourceTree = SOURCE_ROOT; };
@@ -346,7 +342,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +357,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +441,6 @@
 				BE88E7F41C88C6B30034A112 /* Tentacle */,
 				BE88E8001C88C6B30034A112 /* Tests */,
 				BE88E8681C88F0990034A112 /* update-test-fixtures */,
-				BE88E8271C88C7E90034A112 /* Frameworks */,
 				BE88E7F31C88C6B30034A112 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -531,16 +524,6 @@
 			);
 			name = Tests;
 			path = Tests/TentacleTests;
-			sourceTree = "<group>";
-		};
-		BE88E8271C88C7E90034A112 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */,
-				928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */,
-			);
-			name = Frameworks;
-			path = Tentacle;
 			sourceTree = "<group>";
 		};
 		BE88E8681C88F0990034A112 /* update-test-fixtures */ = {

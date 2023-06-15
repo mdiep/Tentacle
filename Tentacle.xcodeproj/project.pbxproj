@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DCC3EC62A3BB6DB00E10485 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; };
+		2DCC3EC72A3BB6DB00E10485 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DCC3ECC2A3BB6EA00E10485 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; };
+		2DCC3ECD2A3BB6EA00E10485 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		61377C781C8A2B760081FF24 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61377C791C8A2B760081FF24 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
 		61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
@@ -227,7 +231,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2DCC3EC82A3BB6DB00E10485 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DCC3EC72A3BB6DB00E10485 /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC3ECE2A3BB6EA00E10485 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DCC3ECD2A3BB6EA00E10485 /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A072D8D1DED11C900CFE58F /* ContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
@@ -342,6 +372,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCC3EC62A3BB6DB00E10485 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +388,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCC3ECC2A3BB6EA00E10485 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +411,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DCC3EB52A3BB66500E10485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE0F40961C8908CB00E3B11A /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +482,7 @@
 				BE88E8001C88C6B30034A112 /* Tests */,
 				BE88E8681C88F0990034A112 /* update-test-fixtures */,
 				BE88E7F31C88C6B30034A112 /* Products */,
+				2DCC3EB52A3BB66500E10485 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -565,6 +606,7 @@
 				61377C681C8A2B2C0081FF24 /* Frameworks */,
 				61377C691C8A2B2C0081FF24 /* Headers */,
 				61377C6A1C8A2B2C0081FF24 /* Resources */,
+				2DCC3EC82A3BB6DB00E10485 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -601,6 +643,7 @@
 				BE88E7EE1C88C6B30034A112 /* Frameworks */,
 				BE88E7EF1C88C6B30034A112 /* Headers */,
 				BE88E7F01C88C6B30034A112 /* Resources */,
+				2DCC3ECE2A3BB6EA00E10485 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -11,7 +11,13 @@ let package = Package(
     ],
     targets: [
         .target(name: "Tentacle", dependencies: ["ReactiveSwift"]),
-        .testTarget(name: "TentacleTests", dependencies: ["Tentacle"]),
+        .testTarget(
+            name: "TentacleTests", 
+            dependencies: ["Tentacle"], 
+            resources: [
+                .copy("Fixtures"),
+            ]
+        ),
     ],
     swiftLanguageVersions: [.v5]
 )

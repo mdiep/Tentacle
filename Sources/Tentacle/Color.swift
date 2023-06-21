@@ -21,8 +21,8 @@ extension Color {
         precondition(hex.count == 6)
 
         let scanner = Scanner(string: hex)
-        var rgb: UInt32 = 0
-        scanner.scanHexInt32(&rgb)
+        var rgb: UInt64 = 0
+        scanner.scanHexInt64(&rgb)
 
         let r = CGFloat((rgb & 0xff0000) >> 16) / 255.0
         let g = CGFloat((rgb & 0x00ff00) >>  8) / 255.0

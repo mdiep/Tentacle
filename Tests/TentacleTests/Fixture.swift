@@ -152,6 +152,7 @@ struct Fixture {
         Release.Asset.MDPSplitView_framework_zip,
         Releases.Carthage[0],
         Releases.Carthage[1],
+        Releases.Carthage[2],
         UserProfile.mdiep,
         UserProfile.test,
         IssuesInRepository.PalleasOpensource,
@@ -201,7 +202,8 @@ struct Fixture {
     struct Releases: EndpointFixtureType {
         static let Carthage = [
             Releases(Repository(owner: "Carthage", name: "Carthage").releases, 1, 30),
-            Releases(Repository(owner: "Carthage", name: "Carthage").releases, 2, 30)
+            Releases(Repository(owner: "Carthage", name: "Carthage").releases, 2, 30),
+            Releases(Repository(owner: "Carthage", name: "Carthage").releases, 3, 30)
         ]
         
         let request: Request<[Tentacle.Release]>

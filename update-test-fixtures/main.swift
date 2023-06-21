@@ -46,7 +46,7 @@ let result = SignalProducer<FixtureType, Error>(Fixture.allFixtures)
                 
                 if changed || !fileManager.fileExists(atPath: responseURL.path) {
                     try? NSKeyedArchiver
-                        .archivedData(withRootObject: response)
+                        .archivedData(withRootObject: response, requiringSecureCoding: false)
                         .write(to: responseURL, options: .atomic)
                 }
             })

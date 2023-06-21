@@ -91,7 +91,9 @@ extension FixtureType {
     /// The HTTP response from the endpoint.
     var response: HTTPURLResponse {
         let data = try! Data(contentsOf: responseFileURL)
-        return NSKeyedUnarchiver.unarchiveObject(with: data) as! HTTPURLResponse
+        let unarchiver = try! NSKeyedUnarchiver(forReadingFrom: data)
+        unarchiver.requiresSecureCoding = false
+        return try! unarchiver.decodeTopLevelObject(of: HTTPURLResponse.self, forKey: "root")!
     }
 }
 

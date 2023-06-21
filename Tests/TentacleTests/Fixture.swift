@@ -91,7 +91,9 @@ extension FixtureType {
     /// The HTTP response from the endpoint.
     var response: HTTPURLResponse {
         let data = try! Data(contentsOf: responseFileURL)
-        return NSKeyedUnarchiver.unarchiveObject(with: data) as! HTTPURLResponse
+        let unarchiver = try! NSKeyedUnarchiver(forReadingFrom: data)
+        unarchiver.requiresSecureCoding = false
+        return try! unarchiver.decodeTopLevelObject(of: HTTPURLResponse.self, forKey: "root")!
     }
 }
 
@@ -150,6 +152,7 @@ struct Fixture {
         Release.Asset.MDPSplitView_framework_zip,
         Releases.Carthage[0],
         Releases.Carthage[1],
+        Releases.Carthage[2],
         UserProfile.mdiep,
         UserProfile.test,
         IssuesInRepository.PalleasOpensource,
@@ -199,7 +202,8 @@ struct Fixture {
     struct Releases: EndpointFixtureType {
         static let Carthage = [
             Releases(Repository(owner: "Carthage", name: "Carthage").releases, 1, 30),
-            Releases(Repository(owner: "Carthage", name: "Carthage").releases, 2, 30)
+            Releases(Repository(owner: "Carthage", name: "Carthage").releases, 2, 30),
+            Releases(Repository(owner: "Carthage", name: "Carthage").releases, 3, 30)
         ]
         
         let request: Request<[Tentacle.Release]>

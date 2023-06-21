@@ -8,11 +8,24 @@
     "title" : "Add informations in Readme",
     "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/3",
     "events_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/3\/events",
+    "reactions" : {
+      "-1" : 0,
+      "hooray" : 0,
+      "+1" : 0,
+      "rocket" : 0,
+      "laugh" : 0,
+      "heart" : 0,
+      "confused" : 0,
+      "eyes" : 0,
+      "total_count" : 0,
+      "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/3\/reactions"
+    },
     "updated_at" : "2016-07-14T01:40:08Z",
     "comments_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/3\/comments",
     "assignee" : null,
     "pull_request" : {
       "patch_url" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/pull\/3.patch",
+      "merged_at" : null,
       "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/pulls\/3",
       "diff_url" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/pull\/3.diff",
       "html_url" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/pull\/3"
@@ -28,11 +41,12 @@
       "received_events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/received_events",
       "following_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/following{\/other_user}",
       "login" : "Palleas-opensource",
-      "avatar_url" : "https:\/\/avatars0.githubusercontent.com\/u\/15802020?v=3",
+      "avatar_url" : "https:\/\/avatars.githubusercontent.com\/u\/15802020?v=4",
       "url" : "https:\/\/api.github.com\/users\/Palleas-opensource",
+      "node_id" : "MDQ6VXNlcjE1ODAyMDIw",
       "subscriptions_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/subscriptions",
-      "type" : "User",
       "repos_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/repos",
+      "type" : "User",
       "html_url" : "https:\/\/github.com\/Palleas-opensource",
       "events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/events{\/privacy}",
       "site_admin" : false,
@@ -42,36 +56,49 @@
       "followers_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/followers"
     },
     "closed_at" : null,
+    "active_lock_reason" : null,
+    "timeline_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/3\/timeline",
+    "state_reason" : null,
+    "draft" : false,
     "labels_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/3\/labels{\/name}",
     "assignees" : [
 
     ],
     "comments" : 0,
     "created_at" : "2016-07-14T01:40:08Z",
+    "node_id" : "MDExOlB1bGxSZXF1ZXN0NzczODgyNjg=",
+    "author_association" : "OWNER",
+    "performed_via_github_app" : null,
     "html_url" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/pull\/3"
   },
   {
     "labels" : [
       {
+        "default" : true,
+        "color" : "ee0701",
         "id" : 381957828,
-        "default" : true,
-        "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/labels\/bug",
+        "node_id" : "MDU6TGFiZWwzODE5NTc4Mjg=",
+        "description" : null,
         "name" : "bug",
-        "color" : "ee0701"
+        "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/labels\/bug"
       },
       {
+        "default" : true,
+        "color" : "cccccc",
         "id" : 381957829,
-        "default" : true,
-        "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/labels\/duplicate",
+        "node_id" : "MDU6TGFiZWwzODE5NTc4Mjk=",
+        "description" : null,
         "name" : "duplicate",
-        "color" : "cccccc"
+        "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/labels\/duplicate"
       },
       {
-        "id" : 381957830,
         "default" : true,
-        "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/labels\/enhancement",
+        "color" : "84b6eb",
+        "id" : 381957830,
+        "node_id" : "MDU6TGFiZWwzODE5NTc4MzA=",
+        "description" : null,
         "name" : "enhancement",
-        "color" : "84b6eb"
+        "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/labels\/enhancement"
       }
     ],
     "locked" : false,
@@ -83,6 +110,7 @@
       "created_at" : "2016-07-13T16:56:48Z",
       "labels_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/milestones\/1\/labels",
       "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/milestones\/1",
+      "node_id" : "MDk6TWlsZXN0b25lMTg4MTM5MA==",
       "closed_issues" : 0,
       "title" : "Release this app",
       "creator" : {
@@ -91,11 +119,12 @@
         "received_events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/received_events",
         "following_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/following{\/other_user}",
         "login" : "Palleas-opensource",
-        "avatar_url" : "https:\/\/avatars0.githubusercontent.com\/u\/15802020?v=3",
+        "avatar_url" : "https:\/\/avatars.githubusercontent.com\/u\/15802020?v=4",
         "url" : "https:\/\/api.github.com\/users\/Palleas-opensource",
+        "node_id" : "MDQ6VXNlcjE1ODAyMDIw",
         "subscriptions_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/subscriptions",
-        "type" : "User",
         "repos_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/repos",
+        "type" : "User",
         "html_url" : "https:\/\/github.com\/Palleas-opensource",
         "events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/events{\/privacy}",
         "site_admin" : false,
@@ -113,6 +142,18 @@
     "title" : "This issue is open",
     "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/1",
     "events_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/1\/events",
+    "reactions" : {
+      "-1" : 0,
+      "hooray" : 0,
+      "+1" : 0,
+      "rocket" : 0,
+      "laugh" : 0,
+      "heart" : 0,
+      "confused" : 0,
+      "eyes" : 0,
+      "total_count" : 0,
+      "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/1\/reactions"
+    },
     "updated_at" : "2016-07-27T01:29:31Z",
     "comments_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/1\/comments",
     "assignee" : {
@@ -121,11 +162,12 @@
       "received_events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/received_events",
       "following_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/following{\/other_user}",
       "login" : "Palleas-opensource",
-      "avatar_url" : "https:\/\/avatars0.githubusercontent.com\/u\/15802020?v=3",
+      "avatar_url" : "https:\/\/avatars.githubusercontent.com\/u\/15802020?v=4",
       "url" : "https:\/\/api.github.com\/users\/Palleas-opensource",
+      "node_id" : "MDQ6VXNlcjE1ODAyMDIw",
       "subscriptions_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/subscriptions",
-      "type" : "User",
       "repos_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/repos",
+      "type" : "User",
       "html_url" : "https:\/\/github.com\/Palleas-opensource",
       "events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/events{\/privacy}",
       "site_admin" : false,
@@ -145,11 +187,12 @@
       "received_events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/received_events",
       "following_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/following{\/other_user}",
       "login" : "Palleas-opensource",
-      "avatar_url" : "https:\/\/avatars0.githubusercontent.com\/u\/15802020?v=3",
+      "avatar_url" : "https:\/\/avatars.githubusercontent.com\/u\/15802020?v=4",
       "url" : "https:\/\/api.github.com\/users\/Palleas-opensource",
+      "node_id" : "MDQ6VXNlcjE1ODAyMDIw",
       "subscriptions_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/subscriptions",
-      "type" : "User",
       "repos_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/repos",
+      "type" : "User",
       "html_url" : "https:\/\/github.com\/Palleas-opensource",
       "events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/events{\/privacy}",
       "site_admin" : false,
@@ -159,6 +202,9 @@
       "followers_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/followers"
     },
     "closed_at" : null,
+    "active_lock_reason" : null,
+    "timeline_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/1\/timeline",
+    "state_reason" : null,
     "labels_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/issues\/1\/labels{\/name}",
     "assignees" : [
       {
@@ -167,11 +213,12 @@
         "received_events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/received_events",
         "following_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/following{\/other_user}",
         "login" : "Palleas-opensource",
-        "avatar_url" : "https:\/\/avatars0.githubusercontent.com\/u\/15802020?v=3",
+        "avatar_url" : "https:\/\/avatars.githubusercontent.com\/u\/15802020?v=4",
         "url" : "https:\/\/api.github.com\/users\/Palleas-opensource",
+        "node_id" : "MDQ6VXNlcjE1ODAyMDIw",
         "subscriptions_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/subscriptions",
-        "type" : "User",
         "repos_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/repos",
+        "type" : "User",
         "html_url" : "https:\/\/github.com\/Palleas-opensource",
         "events_url" : "https:\/\/api.github.com\/users\/Palleas-opensource\/events{\/privacy}",
         "site_admin" : false,
@@ -183,6 +230,9 @@
     ],
     "comments" : 2,
     "created_at" : "2016-05-24T23:38:39Z",
+    "node_id" : "MDU6SXNzdWUxNTY2MzMxMDk=",
+    "author_association" : "OWNER",
+    "performed_via_github_app" : null,
     "html_url" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/issues\/1"
   }
 ]

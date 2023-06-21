@@ -10,11 +10,18 @@ import Foundation
 
 public struct Label: CustomStringConvertible, ResourceType {
     public let name: String
-    public let color: Color
 
-    public var description: String {
-        return name
+    #if os(Linux)
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try container.decode(String.self, forKey: .name)
     }
+
+    public init(name: String) {
+        self.name = name
+    }
+    #else
+    public let color: Color
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -25,6 +32,11 @@ public struct Label: CustomStringConvertible, ResourceType {
     public init(name: String, color: Color) {
         self.name = name
         self.color = color
+    }
+    #endif
+
+    public var description: String {
+        return name
     }
 
     private enum CodingKeys: String, CodingKey {

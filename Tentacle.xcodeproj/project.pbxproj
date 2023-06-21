@@ -11,6 +11,10 @@
 		2DCC3EC72A3BB6DB00E10485 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DCC3ECC2A3BB6EA00E10485 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; };
 		2DCC3ECD2A3BB6EA00E10485 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DCC3ED12A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC3ECF2A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data */; };
+		2DCC3ED22A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC3ECF2A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data */; };
+		2DCC3ED32A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC3ED02A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response */; };
+		2DCC3ED42A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response in Resources */ = {isa = PBXBuildFile; fileRef = 2DCC3ED02A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response */; };
 		61377C781C8A2B760081FF24 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61377C791C8A2B760081FF24 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
 		61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
@@ -258,6 +262,8 @@
 
 /* Begin PBXFileReference section */
 		2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCC3ECF2A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Carthage-Carthage-releases.page-3-per_page-30.data"; sourceTree = "<group>"; };
+		2DCC3ED02A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Carthage-Carthage-releases.page-3-per_page-30.response"; sourceTree = "<group>"; };
 		61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A072D8D1DED11C900CFE58F /* ContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
@@ -431,6 +437,8 @@
 				7A3CC6431E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response */,
 				7A3CC6441E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data */,
 				7A3CC6451E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response */,
+				2DCC3ECF2A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data */,
+				2DCC3ED02A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response */,
 				7A8A9D671E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data */,
 				7A8A9D681E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response */,
 				7A3CC6561E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data */,
@@ -759,6 +767,7 @@
 				928DF2201E0E693100E6DE35 /* create-file-sample-response.data in Resources */,
 				7A3CC6991E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data in Resources */,
 				7A3CC68D1E01BC200025E711 /* users-Palleas-Opensource-repos.data in Resources */,
+				2DCC3ED42A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response in Resources */,
 				7A3CC69F1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response in Resources */,
 				7A8A9D6A1E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data in Resources */,
 				BF5691C71EAE6F9600A92D3E /* repos-Palleas-opensource-Sample-repository-git-trees-0c0dfafa361836e11aedcbb95c1f05d3f654aef0.response in Resources */,
@@ -783,6 +792,7 @@
 				7A3CC6A11E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data in Resources */,
 				7A3CC6791E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data in Resources */,
 				7A3CC6711E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data in Resources */,
+				2DCC3ED22A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data in Resources */,
 				7A3CC68B1E01BC200025E711 /* users-mdiep.response in Resources */,
 				7A3CC66B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response in Resources */,
 				7A3CC6A71E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response in Resources */,
@@ -822,6 +832,7 @@
 				928DF21F1E0E693000E6DE35 /* create-file-sample-response.data in Resources */,
 				7A3CC6981E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data in Resources */,
 				7A3CC68C1E01BC200025E711 /* users-Palleas-Opensource-repos.data in Resources */,
+				2DCC3ED32A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.response in Resources */,
 				7A3CC69E1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response in Resources */,
 				7A8A9D691E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data in Resources */,
 				BF5691C61EAE6F9600A92D3E /* repos-Palleas-opensource-Sample-repository-git-trees-0c0dfafa361836e11aedcbb95c1f05d3f654aef0.response in Resources */,
@@ -846,6 +857,7 @@
 				7A3CC6A01E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data in Resources */,
 				7A3CC6781E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data in Resources */,
 				7A3CC6701E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data in Resources */,
+				2DCC3ED12A3BCB9E00E10485 /* repos-Carthage-Carthage-releases.page-3-per_page-30.data in Resources */,
 				7A3CC68A1E01BC200025E711 /* users-mdiep.response in Resources */,
 				7A3CC66A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response in Resources */,
 				7A3CC6A61E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response in Resources */,

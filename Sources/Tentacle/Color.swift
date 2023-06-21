@@ -8,7 +8,9 @@
 
 import Foundation
 
-#if os(iOS) || os(tvOS)
+#if !os(Linux)
+
+#if os(iOS) || os(tvOS) || os(watchOS)
     import UIKit
     public typealias Color = UIColor
 #else
@@ -30,3 +32,5 @@ extension Color {
         self.init(red: r, green: g, blue: b, alpha: 1)
     }
 }
+
+#endif

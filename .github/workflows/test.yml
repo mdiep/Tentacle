@@ -1,0 +1,45 @@
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+jobs:
+  xcode:
+    name: Xcode - ${{ matrix.scheme }}
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        scheme:
+          - Tentacle-iOS
+          - Tentacle-OSX        
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Build
+        run: script/cibuild Tentacle.xcworkspace ${{ matrix.scheme }} build-for-testing
+      - name: Test
+        run: script/cibuild Tentacle.xcworkspace ${{ matrix.scheme }} test-without-building
+
+  spm:
+    name: SwiftPM
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Build
+        run: swift build --build-tests
+      - name: Test
+        run: swift test --skip-build
+
+  update-test-fixures:
+    name: Update Test Fixtures
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Build
+        run: script/cibuild Tentacle.xcworkspace update-test-fixtures build

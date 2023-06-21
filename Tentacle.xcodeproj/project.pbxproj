@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DCC3EC62A3BB6DB00E10485 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; };
+		2DCC3EC72A3BB6DB00E10485 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DCC3ECC2A3BB6EA00E10485 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; };
+		2DCC3ECD2A3BB6EA00E10485 /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		61377C781C8A2B760081FF24 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61377C791C8A2B760081FF24 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
 		61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
@@ -149,10 +153,8 @@
 		927848011E0C78EA003B9EE6 /* FileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847FF1E0C78DB003B9EE6 /* FileResponse.swift */; };
 		928DF21F1E0E693000E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
 		928DF2201E0E693100E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
-		928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */; };
 		928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
 		928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
-		928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */; };
 		928DF23E1E1117D600E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		928DF23F1E11187C00E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
 		92F0C2BA1E391088004A9889 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2B91E391088004A9889 /* FileTests.swift */; };
@@ -229,7 +231,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2DCC3EC82A3BB6DB00E10485 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DCC3EC72A3BB6DB00E10485 /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DCC3ECE2A3BB6EA00E10485 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DCC3ECD2A3BB6EA00E10485 /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A072D8D1DED11C900CFE58F /* ContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
@@ -299,8 +327,6 @@
 		927847FF1E0C78DB003B9EE6 /* FileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponse.swift; sourceTree = "<group>"; };
 		928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponseTests.swift; sourceTree = "<group>"; };
 		928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-file-sample-response.data"; sourceTree = "<group>"; };
-		928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/ReactiveSwift.framework"; sourceTree = "<group>"; };
-		928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Checkouts/ReactiveSwift/build/Debug/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
 		928DF23D1E1117D600E6DE35 /* Sha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha.swift; sourceTree = "<group>"; };
 		92F0C2B91E391088004A9889 /* FileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
 		BE0F409F1C89098E00E3B11A /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fixture.swift; path = Tests/TentacleTests/Fixture.swift; sourceTree = SOURCE_ROOT; };
@@ -346,7 +372,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */,
+				2DCC3EC62A3BB6DB00E10485 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +388,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */,
+				2DCC3ECC2A3BB6EA00E10485 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +411,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DCC3EB52A3BB66500E10485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC3EC52A3BB6DB00E10485 /* ReactiveSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE0F40961C8908CB00E3B11A /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,8 +481,8 @@
 				BE88E7F41C88C6B30034A112 /* Tentacle */,
 				BE88E8001C88C6B30034A112 /* Tests */,
 				BE88E8681C88F0990034A112 /* update-test-fixtures */,
-				BE88E8271C88C7E90034A112 /* Frameworks */,
 				BE88E7F31C88C6B30034A112 /* Products */,
+				2DCC3EB52A3BB66500E10485 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -533,16 +567,6 @@
 			path = Tests/TentacleTests;
 			sourceTree = "<group>";
 		};
-		BE88E8271C88C7E90034A112 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */,
-				928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */,
-			);
-			name = Frameworks;
-			path = Tentacle;
-			sourceTree = "<group>";
-		};
 		BE88E8681C88F0990034A112 /* update-test-fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +606,7 @@
 				61377C681C8A2B2C0081FF24 /* Frameworks */,
 				61377C691C8A2B2C0081FF24 /* Headers */,
 				61377C6A1C8A2B2C0081FF24 /* Resources */,
+				2DCC3EC82A3BB6DB00E10485 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -618,6 +643,7 @@
 				BE88E7EE1C88C6B30034A112 /* Frameworks */,
 				BE88E7EF1C88C6B30034A112 /* Headers */,
 				BE88E7F01C88C6B30034A112 /* Resources */,
+				2DCC3ECE2A3BB6EA00E10485 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1050,7 +1076,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tests/TentacleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1063,7 +1089,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tests/TentacleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1120,13 +1146,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1173,11 +1199,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

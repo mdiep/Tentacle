@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.7.1
 import PackageDescription
 
 let package = Package(
@@ -7,11 +7,17 @@ let package = Package(
         .library(name: "Tentacle", targets: ["Tentacle"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "6.0.0"),
+        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "7.1.1"),
     ],
     targets: [
         .target(name: "Tentacle", dependencies: ["ReactiveSwift"]),
-        .testTarget(name: "TentacleTests", dependencies: ["Tentacle"]),
+        .testTarget(
+            name: "TentacleTests", 
+            dependencies: ["Tentacle"], 
+            resources: [
+                .copy("Fixtures"),
+            ]
+        ),
     ],
     swiftLanguageVersions: [.v5]
 )
